@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.jumbo-bg {
+  background: #000;
+  background-image: url(https://i.imgur.com/i02QcfN.gif);
+  background-size: cover;
+  height: 61fr;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: auto;
+}
+
+.header {
+  margin: 5vw 5vw 55vw 0;
+  width: 100%;
+  text-align: right;
+  z-index: 1;
+  position: relative;
+  color: #fff;
+  font-family: Verdana, sans-serif;
+  font-size: 3rem;
+}
+
+.the-lounge {
+  height: 40vw;
+  padding: 0;
+  color: #aaa;
+  position: relative;
+  z-index: 2;
+}
+
+.the-lounge > p {
+  background: #fff;
+  height: 40vw;
+  margin: -2rem 0 0 0;
+}
+
+.overlay {
+    margin: 0;
+    padding: 0;
+}
+
+.the-music {
+  /* background: #000; */
+  height: 60vw;
+  color: #aaa;
+  position: relative;
+  z-index: 3;
+}
+
+.the-rules {
+  background: #ddd;
+  height: 60vw;
+  color: #aaa;
+  position: relative;
+  z-index: 4;
+}
+
+.the-events {
+  background: #ccc;
+  height: 60vw;
+  color: #aaa;
+  position: relative;
+  z-index: 5;
+}
