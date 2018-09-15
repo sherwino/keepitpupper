@@ -1,8 +1,7 @@
 # HTML
-Nothing that special to note about the HTML in this project. 
 Going to use semantic markup, and try to use whatever methods are available to make the page more accessibility friendly. 
 
-In addition going to use methods that allow for a responsive, mobile first experience that minimizes the amount of requests we make and going to use things like SRC SET to replace the images depending on the screen that is consuming them. 
+In addition going to use methods that allow for a responsive, mobile first experience that minimizes the amount of requests we make and going to use things like src set to replace the images depending on the screen that is consuming them. 
 
 ## Semantic Markup
 >Good CSS can make bad markup invisible to the average website visitor. However, no amount of styling will make bad markup more meaningful to a computerized visitor such as a search engine web crawler, browser translation tools, or assistive technologies such as screen readers. According to Bruce Lawson, the semantic use of HTML elements “enhances accessibility, searchability, internationalization, and interoperability.” In other words, writing semantic markup is mandatory if you want your website to be accessible to all visitors, to achieve a high search engine ranking, to be available to visitors from around the world, and to interface effectively with other web services. Writing semantic markup is about creating web content that is both human and computer readable. When the web can be read equally well by both humans and computers, it becomes more accessible since computers are better able to analyze its contents, index it, deliver it, and developers are better able to tie different sources of information together into new web services.
@@ -70,8 +69,8 @@ If the screen is less than 1000px, and more than 500px, it uses `kookaburra_medi
 There are a few interesting things to note about this. 
 
 - The images are wrapped in a ```<picture></picture>``` tag. 
-- The each of he srcset sources is wrapped in a ```<source></source>``` tag.
-- The source tag contains a media query, and it has a string with the multiple image options with the Dpi as a suffix. 
+- Each of the srcset sources are wrapped in a ```<source></source>``` tag.
+- The source tag contains a media query, and it has a string with multiple image options with Dpi as a suffix. 
 - Final thing to note is that the picture tag also has the generic ```<img></img>``` tag to fall back to if none of those conditions apply, and if the browser does not support srcset options. ...basically if these options don't work, well here is a the least fancy version of our image using an old fashioned img tag.
 
 Actually MDN wrote about this topic [here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images), and mentions why you probably should do this in the HTML, and not through JS, or CSS. Tl;dr - basically browser will prefetch the images and by the time the script kicks in you have already downloaded the large image. The CSS way shown [here](https://cloudfour.com/thinks/responsive-images-101-part-8-css-images/) 
