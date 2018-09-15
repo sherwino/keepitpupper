@@ -1,4 +1,4 @@
-# HTML
+# Using HTML
 Going to use semantic markup, and try to use whatever methods are available to make the page more accessibility friendly. 
 
 In addition going to use methods that allow for a responsive, mobile first experience that minimizes the amount of requests we make and going to use things like src set to replace the images depending on the screen that is consuming them. 
