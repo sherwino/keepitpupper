@@ -1,0 +1,39 @@
+{
+  "name": "keepitpupper",
+  "version": "1.0.0",
+  "description": "Node Dev Packages for Linting and Other Actors",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sherwino/keepitpupper.git"
+  },
+  "keywords": [
+    "firebase",
+    "html",
+    "css",
+    "eslint"
+  ],
+  "author": "puppy lounge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sherwino/keepitpupper/issues"
+  },
+  "homepage": "https://github.com/sherwino/keepitpupper#readme"
+}
