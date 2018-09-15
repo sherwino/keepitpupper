@@ -146,3 +146,4 @@ The site is going to use firebase realtime db, so we could probably make a littl
 ### Finally
 
 In the bottom somewhere we could say, don't like our music, visit one of our friends in some of the other rooms, and we could feature the other rooms like Brainwaves, MF Room, The Jungle, Darkwave Room, Bacon and etc.
+If I could use some of the amazing design choices made by this [article](https://highline.huffingtonpost.com/articles/en/poor-millennials/) I would give myself a pat on the back.
