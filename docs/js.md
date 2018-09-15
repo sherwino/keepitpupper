@@ -1,11 +1,12 @@
 # Using JavaScript
-This project is going to try its best to use ES6+ or ES2016+ whatever you want to call it, and I am going to use very strict linting rules, mainly because I got used to these rules and can't work without them. For more information on that check out [Linting](#Linting)
+This project is going to try its best to use ES6+ or ES2016+ whatever you want to call it, and I am going to use very strict linting rules, mainly because I got used to these rules and can't work without them. For more information on that check out [Linting](#linting)
 
 ## Service Workers
 
 ## Realtime DB integrations
 
 ## Linting
+
 So this is not that important for a small project like this, but since I would like to use these thngs in all of my projects from now on, I am going to set it up so that I could refer back to it later on. 
 
 In this project going to use Eslint to make sure I have some kind of code writing style guide. I am extending Airbnb's linting standards, with some slight modifications of my own.
@@ -71,7 +72,7 @@ npm i eslint-plugin-promise@latest --save-dev
 }
 ```
 
-...but that is no fun, I want MORE:
+...but that is no fun, you want MORE:
 ```js
 {
     "extends": "airbnb",
@@ -131,21 +132,29 @@ npm i eslint-plugin-promise@latest --save-dev
 
   ![Executing npm run lint, and seeing its results](https://i.gyazo.com/36b19196cca33c361c734143a33feb68.gif)
 
-  That's cool but I want more. Well, me too random reader, me too. So lets step it up a notch and bring this linting to your IDE.
+  That's cool but you want more. Well, me too random reader, me too. So lets step it up a notch and bring this linting to your IDE.
 
   6. In order to have Eslint highlight syntax and linting errors with your code on the fly you are going to have to install a package on your IDE. I am going to show you how to do it with Visual Studio Code, mainly because I am not going to open Atom / Sublime just to show you how to do this there. If you are hot stuff using VSCode you probably already know this but if you press `CMD + SHIFT + P` you get to open a little command menu in VSCode, and you could click on 'Install Extensions' or you could be lame and click on the icon on the right. Your call. 
+
   ![VSCode Command Menu](https://i.gyazo.com/a1e3b055fa8b60e7a835522f52cfae79.gif)
 
   7. Search for `eslint` install that package, and you are done after a reload. Now you have text highlighting. Cool beans.
+
   ![Linter highlighting](https://i.gyazo.com/d7ec009d4c6db8bcfd05ce57fbca0c19.gif)
   
   ...but you want **MORE**, hahahah, yes you do. You want so much more. What if I could told you could have Eslint fix your stupid linting errors automagically. Interested? Well then lets move on to step number eight.
 
   8. Lets go into your VSCode settings and change some stuff. Press `CMD + ,` and open your user settings.json ...wait a minute they changed the interface. You are on your own. Ok fine I will show you. You will have to open the settings menu > extensions > eslint > AutoFix on Save. This guy will let your code automagically be fixed for simple linter errors.
+
   ![Autofix on save settings](https://i.gyazo.com/522a9882daa625f2b668503dbf8b532b.gif)
 
-  Here is the magic in motion, use const if the variable is not going to be changed or re-assigned.
+  Here is the magic in motion, it is forcing me to use const if the variable is not going to be changed or re-assigned.
+
   ![Eslint doing its magic](https://i.gyazo.com/10ccb8ef8f4f6a3127a6ebc6addb138c.gif)
+
+  Nobody is going to use var here, no no no not in my house.
+
+  ![Not in my house](https://media.giphy.com/media/138brgoffhoRwY/giphy.gif)
 
 
 
