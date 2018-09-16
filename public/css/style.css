@@ -1,12 +1,19 @@
-body, p {
+*, p {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  width: 1fr;
-  word-wrap: break-word;
 }
 
-.jumbo-bg {
+body {
   background: linear-gradient(to bottom, #ffffff, #5180af);
+}
+
+/* .jumbo-bg {
+  
+  background-image: url(https://i.imgur.com/yXid1OZ.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
   height: 1fr;
   width: 1fr;
   margin: 0;
@@ -17,7 +24,7 @@ body, p {
   right: 0;
   position: fixed;
   z-index: auto;
-}
+} */
 
 .header {
   width: 100%;
@@ -33,13 +40,18 @@ body, p {
 .subtitle-link {
   text-decoration: none;
   text-shadow: none;
-  color: #fff;
+  color: #bbb;
+}
+
+.main-flex {
+  display: flex;
+  flex-direction: column;
 }
 
 .the-lounge {
   height: 1fr;
   padding: 0;
-  color: #aaa;
+  color: #000;
   position: relative;
 }
 
@@ -52,8 +64,7 @@ body, p {
 }
 
 .overlay {
-    margin: 0;
-    padding: 0 25%;
+    margin: 0 0 0 35%;
     width: 1fr;
 }
 
@@ -64,9 +75,9 @@ body, p {
 .the-music {
   padding: 2rem 0.8rem;
   background: linear-gradient(to bottom, #0000002f, #00000099);
-  height: 50vh;
+  height: 1fr;
   width: 1fr;
-  color: #aaa;
+  color: #010;
   position: relative;
   z-index: 3;
 }
@@ -75,7 +86,7 @@ body, p {
   padding: 2rem 0.8rem;
   background: linear-gradient(to bottom, #00000099, #000000cc);
   background: #00000099;
-  height: 50vh;
+  height: 1fr;
   width: 1fr;
   color: #aaa;
   position: relative;
@@ -85,9 +96,9 @@ body, p {
 .the-events {
   padding: 2rem 0.8rem;
   background: linear-gradient(to bottom, #0000009a, #000000a2);
-  height: 50vh;
+  height: 1fr;
   width: 1fr;
-  color: #aaa;
+  color: #ccc;
   position: relative;
   z-index: 5;
 }
