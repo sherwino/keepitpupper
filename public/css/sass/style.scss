@@ -56,23 +56,23 @@ body {
   padding: 0;
   color: #000;
   position: relative;
-}
 
-.the-lounge > p {
-  background: linear-gradient(to bottom, #5180af23, #0000002f);
-  height: 20vw;
-  width: 1fr;
-  padding: 0.5rem 0.8rem 2rem 0.8rem;
-  margin: -0.5rem 0 0 0;
+  > p {
+    background: linear-gradient(to bottom, #5180af23, #0000002f);
+    height: 20vw;
+    width: 1fr;
+    padding: 0.5rem 0.8rem 2rem 0.8rem;
+    margin: -0.5rem 0 0 0;
+  }
 }
 
 .overlay {
-    margin: 0 0 0 35%;
-    width: 1fr;
-}
+  margin: 0 0 0 35%;
+  width: 1fr;
 
-.overlay > img {
-  width: 60%;
+  > img {
+    width: 60%;
+  }
 }
 
 .the-music {
@@ -105,4 +105,3 @@ body {
   position: relative;
   z-index: 5;
 }
-
