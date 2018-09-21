@@ -8,16 +8,22 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "concurrently": "^4.0.1",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.11.1",
+    "node-sass": "^4.9.3"
   },
   "scripts": {
+    "css-build": "node-sass --omit-source-map-url public/css/sass/style.scss public/css/style.css --output-style compressed",
+    "css-watch": "npm run css-build && npm rum css-build -- --watch",
+    "firebase": "firebase serve",
     "lint": "eslint .",
+    "start": "concurrently --kill-others \"npm run css-watch\" \"npm run firebase\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
