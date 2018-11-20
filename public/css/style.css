@@ -8,6 +8,23 @@ body {
   background: linear-gradient(to bottom, #ffffff, #5180af);
 }
 
+.hidden {
+  display: none;
+}
+
+.editing {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 8px 0px 8px 8px;
+  margin: 10px 2px 6px 0px;
+  border: 1px solid #DDDDDD;
+  color: #000;
+  background: #fff;
+}
+
 /* .jumbo-bg {
   
   background-image: url(https://i.imgur.com/yXid1OZ.jpg);
