@@ -8,19 +8,15 @@ body {
   background: linear-gradient(to bottom, #ffffff, #5180af);
 }
 
-.hidden {
-  display: none;
-}
-
 .editing {
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
   -o-transition: all 0.30s ease-in-out;
   outline: none;
-  padding: 8px 0px 8px 8px;
-  margin: 10px 2px 6px 0px;
-  border: 1px solid #DDDDDD;
+  padding: 16px 0px 16px 16px;
+  margin: 20px 4px 12px 0px;
+  border: 2px solid #44b5f7;
   color: #000;
   background: #fff;
 }

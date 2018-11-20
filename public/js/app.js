@@ -69,9 +69,13 @@
   const saveEdit = (e) => {
     const mouseleftEl = e.target;
     const updateObj = {};
-
-    mouseleftEl.contentEditable = false;
-    mouseleftEl.classList.remove('editing');
+    
+    const stopEditing = () => {
+        mouseleftEl.contentEditable = false;
+        mouseleftEl.classList.remove('editing');
+    };
+    
+    setTimeout(stopEditing, 2500);
 
     const elementKey = mouseleftEl.id;
     const updatedText = mouseleftEl.innerText;
