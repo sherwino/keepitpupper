@@ -1,51 +1,13 @@
 {
-    "extends": "airbnb",
-    "plugins": [
-        "node",
-        "promise",
-        "react"
-      ],
+    "extends": "",
+    "plugins": [],
       "env": {
-        "jest": true
+        "browser": true
       },
       "globals": {
-        "__STATE__": true
+        "__STATE__": true,
+        "serviceworker": true
       },
-      "rules": {
-        "func-names": ["error", "never"],
-        "padding-line-between-statements": [
-          "error",
-          { "blankLine": "always", "prev": "*", "next": "return" },
-          { "blankLine": "always", "prev": "*", "next": "block-like" },
-          { "blankLine": "always", "prev": "block-like", "next": "*" },
-          { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*"},
-          { "blankLine": "any", "prev": ["const", "let", "var"], "next": ["const", "let", "var"]}
-        ],
-        "object-curly-newline": 0,
-        "promise/prefer-await-to-then": 1,
-        "promise/prefer-await-to-callbacks": 1,
-        "node/no-unpublished-require": 0,
-        "indent": ["error", 4, {
-            "SwitchCase": 1,
-            "VariableDeclarator": 1,
-            "outerIIFEBody": 1,
-            "FunctionDeclaration": {
-              "parameters": 1,
-              "body": 1
-            },
-            "FunctionExpression": {
-              "parameters": 1,
-              "body": 1
-            },
-            "CallExpression": {
-              "arguments": 1
-            },
-            "ArrayExpression": 1,
-            "ObjectExpression": 1,
-            "ImportDeclaration": 1,
-            "flatTernaryExpressions": false,
-            "ignoreComments": false
-        }]
-      }
+      "rules": {}
     }
   
