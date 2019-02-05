@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "keepitpupper"
+    "default": "keepitpupper",
+    "dev": "keepitpupper-dev"
   }
 }
