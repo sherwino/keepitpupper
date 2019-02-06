@@ -1,5 +1,5 @@
 <template>
-    <span contenteditable="true">{{ content }}</span>
+    <span contenteditable v-on:blur="updateContentInDB" v-model="content">{{ content }}</span>
 </template>
 
 <script>
@@ -26,10 +26,6 @@
                 content: "Content goes here"
             };
         },
-        computed: {
-            content() {
-            }
-        },
         async mounted() {
             let docRef = firestore.doc(this.docKey);
             let content = await docRef.get();
@@ -42,7 +38,17 @@
                 this.content = value;
             });
         },
-        methods: {}
+        methods: {
+            updateContentInDB(event) {
+                let newValue = event.target.innerText;
+                console.log("Updating in DB");
+                console.log(newValue);
+                let docRef = firestore.doc(this.docKey);
+                docRef.set(({
+                    value: newValue
+                }));
+            }
+        }
     };
 </script>
 
