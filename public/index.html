@@ -2,270 +2,37 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--Icon for the Site Dog Emoji-->
-  <link rel="icon" type="image/jpg" href="https://i.imgur.com/yj1l7EM.png">
-  <title>The Puppy Lounge</title>
-  <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="./css/queries.css" />
-  <!-- Plugins CSS -->
-  <link href="./css/plugins/plugins.css" rel="stylesheet">
-  <link href="./linearicons/fonts.css" rel="stylesheet">
-  <link href="./css/style-saas-landing.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-  crossorigin="anonymous">
-
-  <!-- update the version number as needed -->
-  <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
-  <script defer src="/__/firebase/5.4.2/firebase-app.js"></script>
-  <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/5.4.2/firebase-database.js"></script>
-  <script defer src="/__/firebase/5.4.2/firebase-storage.js"></script>
-  <!-- initialize the SDK after all desired features are loaded -->
-  <script defer src="/__/firebase/init.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Icon for the Site Dog Emoji-->
+    <link rel="icon" type="image/jpg" href="https://i.imgur.com/yj1l7EM.png">
+    <title>The Puppy Lounge</title>
+    <!-- Plugins CSS -->
+    <link href="css/plugins.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/style-saas-landing.css">
+    <link href="linearicons/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
 
 </head>
 
 <body data-spy="scroll" data-target="#landingkit-navbar" data-offset="75">
-  <!-- Now that we are using vuejs, we rely on JS to render site properly, we need js -->
-  <noscript>
+<!-- Now that we are using vuejs, we rely on JS to render site properly, we need js -->
+<noscript>
     <strong>Do your pup a favor, enable JavaScript, without it we can't show you this awesome site properly.</strong>
-  </noscript>
+</noscript>
+<!-- This is where vuejs injects its magic -->
+<div id="app"></div>
 
-  <div id="preloader">
-    <div id="preloader-inner"></div>
-  </div>
-  <!--/preloader-->
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-transparent-light navbar-sticky">
-    <div class="container">
-      <a class="navbar-brand" href="#home" id="mainHead" contenteditable="false">Puppy Lounge</a>
-      <!--We can add logo here in between a tag-->
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#landingkit-navbar"
-        aria-controls="landingkit-navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="landingkit-navbar">
-        <!--target="_blank" add when done-->
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link active" data-scroll href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" data-scroll href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-scroll href="#roomRules">Room Rules</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-scroll href="https://jqbx.fm/" target="_blank">jqbx.fm</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-scroll href="https://www.last.fm/user/puppylounge" target="_blank">last.fm</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div id="home" class="hero-gradient-dark gradien-primary">
-    <div class="transparent-angle angle-top-right"></div>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mr-auto ml-auto pb50">
-          <h3 class="mb20 text-white">Welcome to the Puppy Lounge Site</h3>
-          <p class=" mb30 lead text-white-gray">
-            The puppy lounge is an open format room where you could listen to whatever you feel like listening to.
-          </p>
-          <div>
-            <a data-scroll href="https://app.jqbx.fm/room/puppy" target="_blank" class="btn btn-primary mr-3 my-3">Join
-              Us</a>
-          </div>
-        </div>
-
-        <div class="col-lg-6 mr-auto ml-auto">
-          <div class="carousel-outer">
-            <div class="owl-carousel owl-theme carousel-browser">
-              <div class="item">
-                <img src="https://i.imgur.com/gNuIcJL.png" alt="Artist: Frank Ocean">
-              </div>
-              <div class="item">
-                <img src="https://i.imgur.com/10olGfj.jpg" alt="Artist: Saba">
-              </div>
-              <div class="item">
-                <img src="https://i.imgur.com/4NiUyR2.jpg" alt="Artist: Mac Miller">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--End of the Artist slider @top of page-->
-      </div>
-    </div>
-  </div>
-  <!--End of the Home section-->
-
-  <!--About Puppy lounge-->
-  <div id="about" class="bg-primary-dark feature-img-section pt90 pb90">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h2 class='text-white text-center'>About Us</h2>
-          <p class="text-white-gray row align-items-center" id="musicHead" contenteditable="false">
-            Here in the puppy lounge, we like to consider ourselves as an open format room you could listen to
-            whatever you feel
-            like listening to. Although we tend to lean towards a few genres, so it is likely that when you
-            come into the room you
-            would hear us playing the following
-          </p>
-
-          <!--Added musicHead from previous Version-->
-          <ul class="list-inline text-center feature-list text-white-gray" id="musicHead" contenteditable="false">
-            <b>
-              <!--Added musicBody from previous Version-->
-              <li id="musicBody" contenteditable="false">Rap</li>
-              <li id="musicBody" contenteditable="false">Hip-Hop</li>
-              <li id="musicBody" contenteditable="false">R&B</li>
-              <li id="musicBody" contenteditable="false">Deep House</li>
-              <li id="musicBody" contenteditable="false">Nu-Disco</li>
-              <li id="musicBody" contenteditable="false">Trap</li>
-              <li id="musicBody" contenteditable="false">Funk</li>
-              <li id="musicBody" contenteditable="false">Dubstep</li>
-              <li id="musicBody" contenteditable="false">Indie</li>
-              <li id="musicBody" contenteditable="false">Latin</li>
-              <li id="musicBody" contenteditable="false">Americana</li>
-              <li id="musicBody" contenteditable="false">well who knows what else, just feel the room out.</li>
-            </b>
-          </ul>
-
-          <p class="text-center">The only genre we stay away from is country music.
-            We also like to welcome bluegrass and folk music around these parts.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--End of the About pups-->
-
-  <main class="main-content">
-    <!--Event Section-->
-    <!--Added eventsHead from previous Version-->
-    <section class='gradient-faded'>
-      <div class="container pt90 pb90">
-        <h3 class="text-center section-title mb70">The Puppy Lounge Does Events:
-          <br>
-          We don't really do much events, but if we come up with something we will try to let you know.</h3>
-        <div class="row">
-          <div class="col-lg-4 border border-faded border-top-0 border-left-0 feature-icon text-center">
-            <h4>Monday</h4>
-            <!--Added eventsBody from previous Version-->
-            <p>
-              On Monday's we tend to play our weekly Discover playlist that Spotify made for us. Usually, this list
-              will consist of
-              songs that we haven't listened to on Spotify, it could be new or old stuff.</p>
-          </div>
-          <div class="col-lg-4 feature-icon border border-faded border-left-0 border-top-0 text-center">
-            <h4>Tuesday</h4>
-            <!--Added eventsBody from previous Version-->
-            <p>
-              Tuesdays are made to be free for all. Go with the flow of the room!
-            </p>
-          </div>
-          <div class="col-lg-4 feature-icon border border-faded border-left-0 border-top-0 border-right-0 text-center">
-            <h4>Wednesday</h4>
-            <!--Added eventsBody from previous Version-->
-            <p>
-              Wednesday's are made to be free for all. Go with the flow of the room!
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 feature-icon border border-faded border-left-0 border-top-0 border-bottom-0 text-center">
-            <h4>Thursday</h4>
-            <!--Added eventsBody from previous Version-->
-            <p>
-              On Thursday's we like to pepper in some throwbacks jams and scour the nets for new releases!
-            </p>
-          </div>
-          <div class="col-lg-4 feature-icon border border-faded border-top-0 border-left-0 border-bottom-0 text-center">
-            <h4>Friday</h4>
-            <!--Added eventsBody from previous Version-->
-            <p>
-              Fridays are Fresh, this day we try our best to play the newest of the new tunes, with the help of our
-              Release Radar
-              playlists, Fresh Finds playlist, and much more. Jump on and play some fresh tunes!
-            </p>
-          </div>
-          <div class="col-lg-4 mb40 feature-icon border border-faded border-bottom-0 border-top-0 border-left-0 border-right-0 text-center">
-            <h4>Sunday</h4>
-            <!--Added eventsBody from previous Version-->
-            <p>
-              On Sundays, we promote the adoption of homeless pets.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--End of the Event Section-->
-
-    <!--Sliding roomRules-->
-    <section id="roomRules" class="bg-primary-dark">
-      <div class="container pt90 pb90">
-        <h6 class="section-subtitle text-center text-white-gray">The Puppy Lounge Doesn't Have Many Rules</h6>
-        <!--Added rulesHead from previous Version-->
-        <h3 class="section-title mb70 text-white" id="rulesHead" contenteditable="false">We pretty much only have FOUR
-          rules:</h3>
-        <div class="row">
-          <div class="col-md-10 mr-auto ml-auto">
-            <div class="carousel-review owl-carousel owl-theme">
-              <div class="item text-center">
-                <!--Added rulesBody from previous Version-->
-                <p class="text-white-gray" id="rulesBody" contenteditable="false">
-                  <b>1. Don't skip, whatever you do just live with your mistakes.</b></p>
-              </div>
-              <div class="item text-center">
-                <!--Added rulesBody from previous Version-->
-                <p class="text-white-gray" id="rulesBody" contenteditable="false">
-                  <b>2. Go with the flow, do your best to follow the vibe.</b></p>
-              </div>
-              <div class="item text-center">
-                <!--Added rulesBody from previous Version-->
-                <p class="text-white-gray" id="rulesBody" contenteditable="false">
-                  <b>3. If you are following rule 2 you should know that you probably can't throw in any country.<br>
-                    So don't play that.</b></p>
-              </div>
-              <div class="item text-center">
-                <!--Added rulesBody from previous Version-->
-                <p class="text-white-gray" id="rulesBody" contenteditable="false">
-                  <b>4. Now, If you play a clean Version of a song you will automatically get a nope
-                    <br>from one of our admins <br>@MF Dave.</b></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--End of sliding Rules-->
-  </main>
-    <!-- This is where vuejs injects its magic -->
-    <div id="app"></div>
-
-  <footer class="footer">
-    <div class="text-center copyright">
-      <span>&copy; Copyright 2018-2019. Designed and Built by <a href="#">Fellow Puppers!</a></span>
-    </div>
-    </div>
-  </footer>
-
-    <!--back to top ^Arrow^-->
-    <a href="#" class="back-to-top" id="back-to-top"><i class="icon-chevron-up"></i></a>
-    <!-- jQuery first then Bootstrap JS. -->
-    <script type="text/javascript" src="./js/plugins/plugins.js"></script>
-    <script type="text/javascript" src="./js/saas.products.custom.js"></script>
-      <script src="./js/app.js"></script>
+<!--back to top ^Arrow^-->
+<a href="#" class="back-to-top" id="back-to-top"><i class="icon-chevron-up"></i></a>
 
 </body>
-
+<!-- jQuery first then Bootstrap JS. -->
+<script type="text/javascript" src="js/plugins/plugins.js"></script>
+<script type="text/javascript" src="js/saas.products.custom.js"></script>
+<script src="js/app.js"></script>
 </html>
