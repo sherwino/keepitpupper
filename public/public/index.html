@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Puppy Lounge</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/queries.css" />
+
+
+  <!-- update the version number as needed -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+  <script defer src="/__/firebase/5.4.2/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/5.4.2/firebase-database.js"></script>
+  <script defer src="/__/firebase/5.4.2/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+  
+
+</head>
+
+<body>
+  <!-- <section class="jumbo-bg"></section> -->
+  <header class="header">
+    <h1 id="mainHead"  contenteditable="false" class="heading">The Puppy Lounge</h1>
+    <h3 class="subtitle">on
+      <a class="subtitle-link" href="//jqbx.fm">JQBX.fm</a>
+    </h3>
+  </header>
+
+  <main class='main-flex'>
+    <section class="the-lounge">
+      <picture class="overlay">
+        <img alt="Frank Ocean" src="https://i.imgur.com/gNuIcJL.png">
+      </picture>
+    </section>
+    <section class="the-music">
+      <h3 id="musicHead" contenteditable="false">...</h3>
+      <p id="musicBody" contenteditable="false">...</p>
+    </section>
+    <section class="the-rules">
+        <h3 id="rulesHead" contenteditable="false">rules Heading</h3>
+        <p id="rulesBody" contenteditable="false">rules Body</p>
+    </section>
+    <section class="the-events">
+        <h3 id="eventsHead" contenteditable="false">events Heading</h3>
+        <p id="eventsBody" contenteditable="false">events Body</p>
+    </section>
+  </main>
+
+  <script src="./js/app.js"></script>
+
+
+</body>
+
+</html>
