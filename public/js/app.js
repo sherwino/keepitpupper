@@ -1,34 +1,34 @@
-(function() {
+(function () {
 
   // ------------ Initialize Firebase ---------------
   const config = {
-    apiKey: "AIzaSyAcjW2rWja6VayhZa90WQVu56NPbS-yq5Q",
-    authDomain: "keepitpupper-dev.firebaseapp.com",
-    databaseURL: "https://keepitpupper-dev.firebaseio.com",
-    projectId: "keepitpupper-dev",
-    storageBucket: "keepitpupper-dev.appspot.com",
-    messagingSenderId: "212309711746"
+    apiKey: 'AIzaSyAcjW2rWja6VayhZa90WQVu56NPbS-yq5Q',
+    authDomain: 'keepitpupper-dev.firebaseapp.com',
+    databaseURL: 'https://keepitpupper-dev.firebaseio.com',
+    projectId: 'keepitpupper-dev',
+    storageBucket: 'keepitpupper-dev.appspot.com',
+    messagingSenderId: '212309711746',
   };
 
 
   firebase.initializeApp(config);
- 
+
   // ------------ Create a reference to the db root ---------------
   const db = firebase
-  .database()
-  .ref()
-  .child('root');
-  
-  const elementDb = db.child("elements");
-  
+    .database()
+    .ref()
+    .child('root');
+
+  const elementDb = db.child('elements');
+
   // ------------ Prints the contents of firebase to console ---------------
   // If there are any values in the db, sync, firebase sends everything as snapshots
-  // Usually I only want the value of the snapshot so .val() returns the goods 
-//   db.on("value", snap => console.log('The full obj', snap.val()));
+  // Usually I only want the value of the snapshot so .val() returns the goods
+  //   db.on("value", snap => console.log('The full obj', snap.val()));
 
-    // ------------ Updates all of the static elements to whatever firebase has ---------------
-    // PLS PLS PLS PLS PLS PLS REFACTOR THIS, THIS IS SO UGLY
-  elementDb.on("value", (snap) => {
+  // ------------ Updates all of the static elements to whatever firebase has ---------------
+  // PLS PLS PLS PLS PLS PLS REFACTOR THIS, THIS IS SO UGLY
+  elementDb.on('value', (snap) => {
     const elementsObj = snap.val();
 
     const mainHead = document.getElementById('mainHead');
@@ -53,39 +53,39 @@
   });
 
   // ------------ Whenever you add something to the elements object in the db ---------------
-  elementDb.on("child_added", snap => console.log('Added this to the elementDb --->', snap.val()));
+  elementDb.on('child_added', snap => console.log('Added this to the elementDb --->', snap.val()));
 
   // ------------ Whenever you change the elements object in the db ---------------
-  elementDb.on("child_changed", snap => console.log('Updated the elementDb --->', snap.val()));
+  elementDb.on('child_changed', snap => console.log('Updated the elementDb --->', snap.val()));
 
   // ------------ Whenever you remove something from the elements object in the db ---------------
-  elementDb.on("child_removed", snap => console.log('Removed something from the elementDb --->', snap.val()));
-    // const liToRemove = document.getElementById(snap.key);
-    // liToRemove.remove();
-//   });
+  elementDb.on('child_removed', snap => console.log('Removed something from the elementDb --->', snap.val()));
+  // const liToRemove = document.getElementById(snap.key);
+  // liToRemove.remove();
+  //   });
 
-  
+
 
   // ------------ When the element is in edit mode, and you mouseleave, save the edits ---------------
   const saveEdit = (e) => {
     const mouseleftEl = e.target;
     const updateObj = {};
-    
+
     const stopEditing = () => {
-        mouseleftEl.contentEditable = false;
-        mouseleftEl.classList.remove('editing');
+      mouseleftEl.contentEditable = false;
+      mouseleftEl.classList.remove('editing');
     };
-    
+
     setTimeout(stopEditing, 2500);
 
     const elementKey = mouseleftEl.id;
     const updatedText = mouseleftEl.innerText;
 
     updateObj[elementKey] = updatedText.trim();
-    console.log("save -->", updateObj);
+    console.log('save -->', updateObj);
 
     return elementDb.update(updateObj).then(() => {
-      mouseleftEl.removeEventListener("mouseleave", saveEdit);
+      mouseleftEl.removeEventListener('mouseleave', saveEdit);
     });
   };
 
@@ -97,17 +97,17 @@
     const clickedEl = e.target;
 
     if (clickedEl.id) {
-      if (clickedEl.contentEditable === "false") {
+      if (clickedEl.contentEditable === 'false') {
         clickedEl.contentEditable = true;
         clickedEl.classList.add('editing');
         console.log('Now editing', clickedEl.id);
       }
 
-      clickedEl.addEventListener("mouseleave", saveEdit);
+      clickedEl.addEventListener('mouseleave', saveEdit);
     }
   };
 
   // ------------ Whatever element you click in the document, make it editable ---------------
-  document.addEventListener("click", toggleEdit);
+  document.addEventListener('click', toggleEdit);
 
-})();
+}());
