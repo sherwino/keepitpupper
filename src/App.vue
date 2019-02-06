@@ -47,10 +47,10 @@
 </template>
 
 <script>
-	import HeroSection from '@/sections/HeroSection.vue';
-	import AboutSection from '@/sections/AboutSection.vue';
-	import EventsSection from '@/sections/EventsSection.vue';
-	import RulesSection from '@/sections/RulesSection.vue';
+	import HeroSection from '@/components/sections/HeroSection.vue';
+	import AboutSection from '@/components/sections/AboutSection.vue';
+	import EventsSection from '@/components/sections/EventsSection.vue';
+	import RulesSection from '@/components/sections/RulesSection.vue';
 
 	export default {
 		name: 'app',

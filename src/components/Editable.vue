@@ -1,23 +1,17 @@
 <template>
-    <div contenteditable="true">
-        <slot v-bind:content="content">
-            {{ content }}
-        </slot>
-    </div>
+    <span contenteditable="true">{{ content }}</span>
 </template>
 
 <script>
     export default {
         name: 'editable',
-        props: {
-            docKey: String
-        },
+        props: ['docKey'],
         data: function () {
             return {};
         },
         computed: {
             content() {
-                return 'This is the content';
+                return 'Editable content';
             }
         },
         methods: {}
