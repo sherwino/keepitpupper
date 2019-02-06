@@ -1,28 +1,30 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+
+    <hero-section></hero-section>
+    <about-section></about-section>
+    <events-section></events-section>
+    <rules-section></rules-section>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import HeroSection from '@/sections/HeroSection.vue';
+import AboutSection from '@/sections/AboutSection.vue';
+import EventsSection from '@/sections/EventsSection.vue';
+import RulesSection from '@/sections/RulesSection.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
+    HeroSection,
+    AboutSection,
+    EventsSection,
+    RulesSection
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
