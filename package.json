@@ -12,25 +12,26 @@
     "vue": "^2.5.22"
   },
   "devDependencies": {
-    "concurrently": "^4.0.1",
-    "node-sass": "^4.9.3",
     "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-plugin-pwa": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
     "@vue/eslint-config-airbnb": "^4.0.0",
     "babel-eslint": "^10.0.1",
+    "concurrently": "^4.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.9.3",
     "vue-template-compiler": "^2.5.21"
   },
   "scripts": {
     "css-build": "node-sass --omit-source-map-url public/css/sass/style.scss public/css/style.css --output-style compressed",
     "css-watch": "npm run css-build && npm rum css-build -- --watch",
+    "functions": "firebase serve --only functions",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "concurrently --kill-others \"npm run css-watch\" \"npm run serve\""
+    "start": "concurrently --kill-others \"npm run css-watch\" \"npm run serve\" \"npm run functions\""
   },
   "repository": {
     "type": "git",
