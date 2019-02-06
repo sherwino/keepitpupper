@@ -53,5 +53,64 @@ export default {
 </script>
 
 <style lang="scss">
-
+	@media(max-width: 991px) {
+		.hero-gradient-dark {
+			padding-bottom: 0rem;
+			padding-top: 4rem;
+		}
+		.navbar-toggler {
+			position: absolute;
+			right: 15px;
+			background-image: none;
+			border: 0px;
+			padding: 0px;
+			top: 0;
+			.navbar-toggler-icon {
+				background-image: none;
+				&:after {
+					font-family: 'Linearicons';
+					content: "\e92b";
+					position: absolute;
+					right: 0;
+					font-size: 2em;
+					top: 3px;
+					transition: all .3s;
+					-webkit-transition: all .3s;
+					color: #000;
+					cursor: pointer;
+				}
+			}
+		}
+		.navbar .navbar-nav .nav-link {
+			border-top: 0px;
+		}
+		.navbar.navbar-expand-lg {
+			.nav-link.btn {
+				display: none;
+			}
+			.navbar-collapse.show {
+				height: 250px;
+				overflow-y: scroll;
+			}
+		}
+		.dropdown-menu {
+			box-shadow: none;
+		}
+		.feature-img-section {
+			text-align: center;
+		}
+		.feature-list li {
+			padding-left: 21px;
+			margin-left: 20px;
+			display: inline-block;
+		}
+		.feature-img {
+			position: static;
+			margin-bottom: 30px;
+			width: 100%;
+			display: table;
+			margin: 0 auto;
+			display: block;
+		}
+	}
 </style>

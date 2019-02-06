@@ -8,8 +8,6 @@
     <!--Icon for the Site Dog Emoji-->
     <link rel="icon" type="image/jpg" href="https://i.imgur.com/yj1l7EM.png">
     <title>The Puppy Lounge</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/queries.css"/>
     <!-- Plugins CSS -->
     <link href="./css/plugins/plugins.css" rel="stylesheet">
     <link href="./linearicons/fonts.css" rel="stylesheet">
@@ -18,50 +16,9 @@
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
           crossorigin="anonymous">
 
-    <!-- update the version number as needed -->
-    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
-    <script defer src="/__/firebase/5.4.2/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/5.4.2/firebase-database.js"></script>
-    <script defer src="/__/firebase/5.4.2/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-
 </head>
 
 <body data-spy="scroll" data-target="#landingkit-navbar" data-offset="75">
-<nav class="navbar navbar-expand-lg navbar-light bg-white navbar-transparent-light navbar-sticky">
-    <div class="container">
-        <a class="navbar-brand" href="#home" id="mainHead" contenteditable="false">Puppy Lounge</a>
-        <!--We can add logo here in between a tag-->
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#landingkit-navbar"
-                aria-controls="landingkit-navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="landingkit-navbar">
-            <!--target="_blank" add when done-->
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" data-scroll href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" data-scroll href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-scroll href="#roomRules">Room Rules</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-scroll href="https://jqbx.fm/" target="_blank">jqbx.fm</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-scroll href="https://www.last.fm/user/puppylounge" target="_blank">last.fm</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
 <!-- Now that we are using vuejs, we rely on JS to render site properly, we need js -->
 <noscript>
     <strong>Do your pup a favor, enable JavaScript, without it we can't show you this awesome site properly.</strong>
