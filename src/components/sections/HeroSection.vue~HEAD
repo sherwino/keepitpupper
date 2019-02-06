@@ -5,15 +5,15 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mr-auto ml-auto pb50">
                     <h3 class="mb20 text-white">Welcome to the Puppy Lounge Site</h3>
+                    <p class=" mb30 lead text-white-gray">
+                        The puppy lounge is an open format room where you could listen to whatever you feel like
+                        listening to.
+                    </p>
+                    <p>
+                        <editable doc-key="/components/HeroSection/Fields/Header"></editable>
+                    </p>
                     <!-- DYNAMIC CONTENT USING THE EDITABLE WRAPPER -->
-                    <editable>
-                        <template v-slot:default="slotProps">
-                            <p class=" mb30 lead text-white-gray">
-                                The puppy lounge is an open format room where you could listen to whatever you feel like
-                                listening to. {{ slotProps.content }}
-                            </p>
-                        </template>
-                    </editable>
+                    <h1><editable doc-key="/components/HeroSection/Fields/Header"></editable></h1>
                     <!-- *********************** -->
                     <div>
                         <a data-scroll href="https://app.jqbx.fm/room/puppy" target="_blank"

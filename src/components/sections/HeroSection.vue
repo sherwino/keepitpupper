@@ -9,11 +9,8 @@
                         The puppy lounge is an open format room where you could listen to whatever you feel like
                         listening to.
                     </p>
-                    <p>
-                        <editable doc-key="/components/HeroSection/Fields/Header"></editable>
-                    </p>
                     <!-- DYNAMIC CONTENT USING THE EDITABLE WRAPPER -->
-                    <h1><editable doc-key="/components/HeroSection/Fields/Header"></editable></h1>
+                    <h1><editable doc-key="path/to/doc/"></editable></h1>
                     <!-- *********************** -->
                     <div>
                         <a data-scroll href="https://app.jqbx.fm/room/puppy" target="_blank"
