@@ -56,6 +56,108 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+
+	*, p {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		background: linear-gradient(to bottom, #ffffff, #5180af);
+	}
+
+
+	.editing {
+		-webkit-transition: all 0.30s ease-in-out;
+		-moz-transition: all 0.30s ease-in-out;
+		-ms-transition: all 0.30s ease-in-out;
+		-o-transition: all 0.30s ease-in-out;
+		outline: none;
+		padding: 16px 0px 16px 16px;
+		margin: 20px 4px 12px 0px;
+		border: 2px solid #44b5f7;
+		color: #FFF;
+		background: #010;
+	}
+
+	.header {
+		width: 100%;
+		text-align: center;
+		z-index: 1;
+		position: relative;
+		color: #000;
+		text-shadow: #aaa 0.2rem 0.3rem 2px;
+		font-family: Verdana, sans-serif;
+		font-size: 2vw;
+	}
+
+	.subtitle-link {
+		text-decoration: none;
+		text-shadow: none;
+		color: #bbb;
+	}
+
+	.main-flex {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.the-lounge {
+		height: 1fr;
+		padding: 0;
+		color: #000;
+		position: relative;
+
+		> p {
+			background: linear-gradient(to bottom, #5180af23, #0000002f);
+			height: 20vw;
+			width: 1fr;
+			padding: 0.5rem 0.8rem 2rem 0.8rem;
+			margin: -0.5rem 0 0 0;
+		}
+	}
+
+	.overlay {
+		margin: 0 0 0 35%;
+		width: 1fr;
+
+		> img {
+			width: 60%;
+		}
+	}
+
+	.the-music {
+		padding: 2rem 0.8rem;
+		background: linear-gradient(to bottom, #0000002f, #00000099);
+		height: 1fr;
+		width: 1fr;
+		color: #010;
+		position: relative;
+		z-index: 3;
+	}
+
+	.the-rules {
+		padding: 2rem 0.8rem;
+		background: linear-gradient(to bottom, #00000099, #000000cc);
+		background: #00000099;
+		height: 1fr;
+		width: 1fr;
+		color: #aaa;
+		position: relative;
+		z-index: 4;
+	}
+
+	.the-events {
+		padding: 2rem 0.8rem;
+		background: linear-gradient(to bottom, #0000009a, #000000a2);
+		height: 1fr;
+		width: 1fr;
+		color: #ccc;
+		position: relative;
+		z-index: 5;
+	}
+
 
 </style>
