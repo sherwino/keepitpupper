@@ -44,9 +44,9 @@
                 console.log("Updating in DB");
                 console.log(newValue);
                 let docRef = firestore.doc(this.docKey);
-                docRef.set(({
+                docRef.update({
                     value: newValue
-                }));
+                });
             }
         }
     };
