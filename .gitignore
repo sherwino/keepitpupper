@@ -76,3 +76,6 @@ typings/
 
 # Dist folder
 /dist/
+
+# Ignore for jetbrainsIDEs
+.idea
