@@ -26,12 +26,10 @@
     "vue-template-compiler": "^2.5.21"
   },
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url public/css/sass/style.scss public/css/style.css --output-style compressed",
-    "css-watch": "npm run css-build && npm rum css-build -- --watch",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "concurrently --kill-others \"npm run css-watch\" \"npm run serve\""
+    "start": "concurrently --kill-others \"npm run serve\""
   },
   "repository": {
     "type": "git",
