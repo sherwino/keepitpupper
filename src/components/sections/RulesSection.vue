@@ -38,19 +38,19 @@
 </template>
 
 <script>
+import Editable from '@/components/Editable.vue';
+
 export default {
   name: 'rules-section',
-  props: {
-
+  components: {
+    Editable,
   },
-  data() {
-    return {
-
-    };
-  },
-  methods: {
-
-  },
+  // props: {},
+  // data: function () {
+  //   return {
+  //   };
+  // },
+  // methods: {},
 };
 </script>
 

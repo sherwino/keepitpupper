@@ -3,20 +3,8 @@
 </template>
 
 <script>
-    let firebase = require('firebase');
-
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyAcjW2rWja6VayhZa90WQVu56NPbS-yq5Q",
-        authDomain: "keepitpupper-dev.firebaseapp.com",
-        databaseURL: "https://keepitpupper-dev.firebaseio.com",
-        projectId: "keepitpupper-dev",
-        storageBucket: "keepitpupper-dev.appspot.com",
-        messagingSenderId: "212309711746"
-    };
-
-    let app = firebase.initializeApp(config);
-    let firestore = app.firestore();
+// This should behave the same way as initializing it here.
+import { firestore } from '../firebaseConfig';
 
     export default {
         name: 'editable',
