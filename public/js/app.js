@@ -2,13 +2,15 @@
 
   // ------------ Initialize Firebase ---------------
   const config = {
-    apiKey: 'AIzaSyAcjW2rWja6VayhZa90WQVu56NPbS-yq5Q',
-    authDomain: 'keepitpupper-dev.firebaseapp.com',
-    databaseURL: 'https://keepitpupper-dev.firebaseio.com',
-    projectId: 'keepitpupper-dev',
-    storageBucket: 'keepitpupper-dev.appspot.com',
-    messagingSenderId: '212309711746',
+    apiKey: 'AIzaSyDAcHiXHxjLx09RxTDoPOipgVAMjUCM7A8',
+    authDomain: 'keepitpupper.firebaseapp.com',
+    databaseURL: 'https://keepitpupper.firebaseio.com',
+    projectId: 'keepitpupper',
+    storageBucket: 'keepitpupper.appspot.com',
+    messagingSenderId: '747615583861',
   };
+
+
 
 
   firebase.initializeApp(config);
