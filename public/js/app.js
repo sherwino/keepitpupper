@@ -8,10 +8,8 @@
     projectId: 'keepitpupper',
     storageBucket: 'keepitpupper.appspot.com',
     messagingSenderId: '747615583861',
+    appId: "1:747615583861:web:87db8f2bf55165bf"
   };
-
-
-
 
   firebase.initializeApp(config);
 
