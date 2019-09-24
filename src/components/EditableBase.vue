@@ -3,20 +3,20 @@
 </template>
 
 <script>
-    export default {
-        name: 'editable-base',
-        props: {
+export default {
+  name: 'editable-base',
+  props: {
 
-        },
-        data: function() {
-            return {
+  },
+  data() {
+    return {
 
-            }
-        },
-        methods: {
+    };
+  },
+  methods: {
 
-        }
-    }
+  },
+};
 </script>
 
 <style lang="scss">
