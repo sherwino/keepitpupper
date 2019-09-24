@@ -18,14 +18,50 @@
           <div class="carousel-outer">
             <div class="owl-carousel owl-theme carousel-browser">
               <div class="item">
-                <img src="https://i.imgur.com/gNuIcJL.png" alt="Artist: Frank Ocean">
+                <img class="feature-image" src="https://i.imgur.com/4NiUyR2.jpg" alt="Artist: Mac Miller">
+              </div>
+							<div class="item">
+                <img class="feature-image" src="https://i.imgur.com/YMsqt4T.jpg" alt="Artist: Drake">
+              </div>
+							<div class="item">
+                <img class="feature-image" src="https://i.imgur.com/lDt1MdK.jpg" alt="Artist: Kendrick Lamar">
+              </div>
+							<div class="item">
+								<img class="feature-image" src="https://i.imgur.com/Cc7Llnp.jpg" alt="Artist: Kanye West">
               </div>
               <div class="item">
-                <img src="https://i.imgur.com/10olGfj.jpg" alt="Artist: Saba">
+                <img class="feature-image" src="https://i.imgur.com/ftApk3x.jpg" alt="Artist: Frank Ocean">
+              </div>
+							<div class="item">
+								<img class="feature-image" src="https://i.imgur.com/z1HpQIE.jpg" alt="Artist: BROCKHAMPTON">
+              </div>
+							<div class="item">
+								<img class="feature-image" src="https://i.imgur.com/NXWgFXc.jpg" alt="Artist: J. Cole">
               </div>
               <div class="item">
-                <img src="https://i.imgur.com/4NiUyR2.jpg" alt="Artist: Mac Miller">
+                <img class="feature-image" src="https://i.imgur.com/10olGfj.jpg" alt="Artist: Saba">
               </div>
+							<div class="item">
+								<img class="feature-image" src="https://i.imgur.com/D9qzxRP.jpg" alt="Artist: Anderson .Paak">
+              </div>
+							<div class="item">
+								<img class="feature-image" src="https://i.imgur.com/0jRlViy.jpg" alt="Artist: The Weeknd">
+              </div>
+							<div class="item">
+								<img class="feature-image" src="https://i.imgur.com/1szY3gX.jpg" alt="Artist: The Internet">
+              </div>
+							<!-- <div class="item">
+								<img src="https://i.imgur.com/4NiUyR2.jpg" alt="Artist: Childish Gambino">
+              </div>
+							<div class="item">
+								<img src="https://i.imgur.com/4NiUyR2.jpg" alt="Artist: Atmosphere">
+              </div>
+							<div class="item">
+								<img src="https://i.imgur.com/4NiUyR2.jpg" alt="Artist: Toro Y Moi">
+              </div>
+							<div class="item">
+								<img src="https://i.imgur.com/4NiUyR2.jpg" alt="Artist: People Under The Stairs">
+              </div> -->
             </div>
           </div>
         </div>
@@ -108,6 +144,7 @@ export default {
 			position: static;
 			margin-bottom: 30px;
 			width: 100%;
+			height: 100%;
 			display: table;
 			margin: 0 auto;
 			display: block;
