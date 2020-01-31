@@ -20,7 +20,6 @@
         </button>
 
         <div class="collapse navbar-collapse" id="landingkit-navbar">
-          <!--target="_blank" add when done-->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link active" data-scroll href="#home">Home</a>
@@ -46,6 +45,7 @@
         </div>
       </div>
     </nav>
+
     <hero-section></hero-section>
     <about-section></about-section>
     <events-section></events-section>
