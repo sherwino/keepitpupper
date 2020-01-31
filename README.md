@@ -1,4 +1,5 @@
 # Keep It Pupper
+
 [keepitpupper.com](//keepitpupper.com)
 
 ## A petite homepage for the best music lounge in the internet:
@@ -18,11 +19,40 @@ Plan to keep the site really lean, try my best to avoid all of those front-end l
 - Create a Map Widget, with Pupper information
 
 ### Useful Information
+
 To keep track of what I am doing I am going to make a little readme for each of the technologies used, and things I should note for future projects.
 
+## Project setup
+
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+
+```
+yarn build
+```
+
+### Run your unit tests
+
+```
+yarn test:unit
+```
+
+### Customize configuration
+
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
 [Docs](./docs)
+
 - [Firebase](./docs/firebase.md) - things to note about setting up the Realtime DB, and hosting
 - [HTML](./docs/html.md) - things to note about the HTML structure and more
 - [JS](./docs/js.md) - things to note about all of the scripts used, service workers, event handlers
 - [CSS](./docs/css.md) - things to note about making page responsive and styled nicely
-
