@@ -1,17 +1,15 @@
 {
   "name": "keepitpupper",
-  "description": "The puppy lounge has a website, aw yeah!",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "version": "0.1.0",
   "private": true,
+  "description": "The puppy lounge has a website, aw yeah!",
+  "author": "puppy lounge",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit"
   },
+  "main": "index.js",
   "dependencies": {
     "core-js": "^3.4.4",
     "register-service-worker": "^1.6.2",
@@ -22,26 +20,23 @@
   },
   "devDependencies": {
     "@types/jest": "^24.0.19",
-    "@vue/cli-plugin-babel": "^4.1.0",
-    "@vue/cli-plugin-pwa": "^4.1.0",
-    "@vue/cli-plugin-router": "^4.1.0",
-    "@vue/cli-plugin-typescript": "^4.1.0",
-    "@vue/cli-plugin-unit-jest": "^4.1.0",
-    "@vue/cli-service": "^4.1.0",
+    "@vue/cli-plugin-babel": "~4.3.1",
+    "@vue/cli-plugin-pwa": "~4.3.1",
+    "@vue/cli-plugin-router": "~4.3.1",
+    "@vue/cli-plugin-typescript": "~4.3.1",
+    "@vue/cli-plugin-unit-jest": "~4.3.1",
+    "@vue/cli-service": "~4.3.1",
     "@vue/test-utils": "1.0.0-beta.29",
     "sass": "^1.23.7",
     "sass-loader": "^8.0.0",
-    "typescript": "~3.5.3",
+    "typescript": "~3.8.3",
     "vue-template-compiler": "^2.6.10"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sherwino/keepitpupper.git"
-  },
-  "author": "puppy lounge",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sherwino/keepitpupper/issues"
+  },
+  "directories": {
+    "doc": "docs"
   },
   "homepage": "https://github.com/sherwino/keepitpupper#readme",
   "keywords": [
@@ -50,5 +45,10 @@
     "css",
     "eslint",
     "vuejs"
-  ]
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sherwino/keepitpupper.git"
+  }
 }
