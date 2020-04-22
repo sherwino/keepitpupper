@@ -1,6 +1,6 @@
 # Keep It Pupper
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [keepitpupper.com](//keepitpupper.com)
 
@@ -42,7 +42,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://sherwino.co"><img src="https://avatars2.githubusercontent.com/u/2348227?v=4" width="100px;" alt=""/><br /><sub><b>Sherwino</b></sub></a><br /><a href="https://github.com/sherwino/keepitpupper/commits?author=sherwino" title="Code">💻</a> <a href="#ideas-sherwino" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-sherwino" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://jesspluslife.com/"><img src="https://avatars3.githubusercontent.com/u/18371011?v=4" width="100px;" alt=""/><br /><sub><b>Jessica Palacios </b></sub></a><br /><a href="https://github.com/sherwino/keepitpupper/commits?author=jesspalacios" title="Code">💻</a> <a href="#design-jesspalacios" title="Design">🎨</a> <a href="#content-jesspalacios" title="Content">🖋</a></td>
     <td align="center"><a href="http://javierfeliz.com/"><img src="https://avatars2.githubusercontent.com/u/13310951?v=4" width="100px;" alt=""/><br /><sub><b>Javier Feliz</b></sub></a><br /><a href="https://github.com/sherwino/keepitpupper/commits?author=javif89" title="Code">💻</a> <a href="#platform-javif89" title="Packaging/porting to new platform">📦</a></td>
- </tr>
+    <td align="center"><a href="https://github.com/Nifled"><img src="https://avatars1.githubusercontent.com/u/16827499?v=4" width="100px;" alt=""/><br /><sub><b>Erick Delfin</b></sub></a><br /><a href="https://github.com/sherwino/keepitpupper/commits?author=Nifled" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
