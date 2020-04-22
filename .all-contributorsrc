@@ -15,7 +15,18 @@
         "ideas",
         "infra"
       ]
-    }
+    },
+{
+      "login": "jesspalacios",
+      "name": "Jessica Palacios ",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/18371011?v=4",
+      "profile": "https://jesspluslife.com/",
+      "contributions": [
+        "code",
+        "design",
+        "content"
+]
+},
   ],
   "contributorsPerLine": 7,
   "projectName": "keepitpupper",
