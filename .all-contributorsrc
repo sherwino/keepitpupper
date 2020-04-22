@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Nifled",
+      "name": "Erick Delfin",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/16827499?v=4",
+      "profile": "https://github.com/Nifled",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "keepitpupper",
+  "projectOwner": "sherwino",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
