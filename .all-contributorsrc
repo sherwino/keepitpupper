@@ -6,6 +6,17 @@
   "commit": false,
   "contributors": [
     {
+      "login": "sherwino",
+      "name": "Sherwino",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/2348227?v=4",
+      "profile": "http://sherwino.co",
+      "contributions": [
+        "code",
+        "ideas",
+        "infra"
+      ]
+    },
+{
       "login": "jesspalacios",
       "name": "Jessica Palacios ",
       "avatar_url": "https://avatars3.githubusercontent.com/u/18371011?v=4",
@@ -14,8 +25,8 @@
         "code",
         "design",
         "content"
-      ]
-    }
+]
+},
   ],
   "contributorsPerLine": 7,
   "projectName": "keepitpupper",
