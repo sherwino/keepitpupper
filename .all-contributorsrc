@@ -1,0 +1,26 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "sherwino",
+      "name": "Sherwino",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/2348227?v=4",
+      "profile": "http://sherwino.co",
+      "contributions": [
+        "code",
+        "ideas",
+        "infra"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "keepitpupper",
+  "projectOwner": "sherwino",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
