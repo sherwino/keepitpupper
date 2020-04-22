@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "javif89",
+      "name": "Javier Feliz",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/13310951?v=4",
+      "profile": "http://javierfeliz.com/",
+      "contributions": [
+        "code",
+        "platform"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "keepitpupper",
+  "projectOwner": "sherwino",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
