@@ -5,7 +5,7 @@
   "imageSize": 100,
   "commit": false,
   "contributors": [
-{
+    {
       "login": "sherwino",
       "name": "Sherwino",
       "avatar_url": "https://avatars2.githubusercontent.com/u/2348227?v=4",
@@ -16,7 +16,7 @@
         "infra"
       ]
     },
-{
+    {
       "login": "jesspalacios",
       "name": "Jessica Palacios ",
       "avatar_url": "https://avatars3.githubusercontent.com/u/18371011?v=4",
@@ -25,8 +25,8 @@
         "code",
         "design",
         "content"
-]
-},
+      ]
+    },
     {
       "login": "javif89",
       "name": "Javier Feliz",
@@ -35,6 +35,15 @@
       "contributions": [
         "code",
         "platform"
+      ]
+    },
+    {
+      "login": "Nifled",
+      "name": "Erick Delfin",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/16827499?v=4",
+      "profile": "https://github.com/Nifled",
+      "contributions": [
+        "code"
       ]
     }
   ],
