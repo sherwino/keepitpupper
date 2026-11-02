@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Keep It Pupper</title>
+<meta name="description" content="keepitpupper.com is parked. Catch some bones while you're here.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐶</text></svg>">
+<style>
+  html,body{margin:0;height:100%;background:#1d1a2b;color:#f4efe6;font:16px/1.4 system-ui,sans-serif;text-align:center}
+  h1{margin:16px 0 4px;font-size:22px}
+  p{margin:0 0 12px;opacity:.7;font-size:14px}
+  canvas{background:#2c2742;border-radius:12px;max-width:calc(100vw - 32px);touch-action:none}
+</style>
+</head>
+<body>
+<h1>Keep It Pupper</h1>
+<p>Parked for now. Catch the bones — ← → / mouse / touch.</p>
+<canvas id="c" width="360" height="480"></canvas>
+<script>
+const c = document.getElementById('c'), x = c.getContext('2d'), W = c.width, H = c.height;
+let pup, bones, score, lives, t, over, best = 0;
+try { best = +localStorage.getItem('pupBest') || 0 } catch (e) {}
+const keys = {};
+function reset() { pup = W / 2; bones = []; score = 0; lives = 3; t = 0; over = false }
+onkeydown = e => { keys[e.key] = 1; if (over && e.key === ' ') reset() };
+onkeyup = e => { keys[e.key] = 0 };
+function aim(e) { const r = c.getBoundingClientRect(); pup = (e.clientX - r.left) * W / r.width }
+c.onpointermove = aim;
+c.onpointerdown = e => { if (over) reset(); aim(e) };
+function frame() {
+  if (!over) {
+    t++;
+    if (keys.ArrowLeft) pup -= 6;
+    if (keys.ArrowRight) pup += 6;
+    pup = Math.max(20, Math.min(W - 20, pup));
+    if (t % Math.max(18, 50 - score) === 0) bones.push({ x: 20 + Math.random() * (W - 40), y: -20, v: 2 + Math.random() * 2 + score / 15 });
+    for (const b of bones) {
+      b.y += b.v;
+      if (b.y > H - 50 && b.y < H - 10 && Math.abs(b.x - pup) < 30) { b.done = 1; score++ }
+      else if (b.y > H) { b.done = 1; if (--lives === 0) { over = true; if (score > best) { best = score; try { localStorage.setItem('pupBest', best) } catch (e) {} } } }
+    }
+    bones = bones.filter(b => !b.done);
+  }
+  x.clearRect(0, 0, W, H);
+  x.textAlign = 'center'; x.textBaseline = 'middle';
+  x.font = '28px serif';
+  for (const b of bones) x.fillText('🦴', b.x, b.y);
+  x.font = '40px serif'; x.fillText('🐶', pup, H - 30);
+  x.font = '16px system-ui,sans-serif'; x.fillStyle = '#f4efe6';
+  x.textAlign = 'left'; x.fillText('Bones ' + score, 12, 18);
+  x.textAlign = 'right'; x.fillText('❤️'.repeat(lives) + '  Best ' + best, W - 12, 18);
+  if (over) {
+    x.textAlign = 'center'; x.font = 'bold 26px system-ui,sans-serif';
+    x.fillText('Good pup! ' + score + ' bones', W / 2, H / 2 - 10);
+    x.font = '15px system-ui,sans-serif'; x.fillText('tap or press space to play again', W / 2, H / 2 + 20);
+  }
+  requestAnimationFrame(frame);
+}
+reset(); frame();
+</script>
+</body>
+</html>
